@@ -7,7 +7,7 @@ def cadastro():
     dados=txt.readlines()
 
     if int(dados[0])!=0:
-        id=dados[0]
+        id=int(dados[0])
         for x in dados!=dados[0]:
             vendedores.append(x)
     else:
