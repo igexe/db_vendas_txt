@@ -1,11 +1,9 @@
-import cadastro_vendedor as vendedor
+import cadastro_cliente as cliente
 
-vendedor.cadastro()
+#cliente.cadastro()
 
-t=open('vendedor.txt','r')
-r=t.readlines()
+t=open('clientes.txt','r')
+d=t.readlines()
 
-for x in r:
-    x=x.rstrip('\n')
-    x=eval(x)
-    print(x)
+for x in d:
+    print(x.rstrip('\n'))
